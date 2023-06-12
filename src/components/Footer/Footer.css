@@ -1,0 +1,23 @@
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: #FFFFFF99;
+    padding: 20px;
+}
+
+.footer-nav{
+    display: flex;
+    width: 40%;
+}
+
+.footer-nav p{
+    padding-right: 5%;
+}
+
+.tags{
+    display: flex;
+    justify-content: space-between;
+    width: 7%;
+
+}
