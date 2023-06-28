@@ -10,3 +10,8 @@
 :root{
   --blue: #00A2E1;
 }
+
+.header-link{
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,10 @@
+.allCity-container{
+    border: #CED3D8 1px solid;
+    border-radius: 18px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+

@@ -1,0 +1,54 @@
+.infobox-container{
+    display: flex;
+    width: 90%;
+    padding: 0px;
+    margin: 0px;
+    align-items: top;   
+}
+
+.info-left{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+    padding-right: 10%;
+    margin-left: 5%;
+    margin-top: 3%;
+
+}
+
+.title{
+    display: flex;  
+    align-items: center; 
+}
+
+.title h3{
+    margin-top: 10px;
+    padding-left: 2%;
+}
+
+.margin{
+    margin-top: 10%;
+}
+
+.textbox p {
+    padding-left: 12%;
+    text-align: left;
+}
+
+.icons{
+    margin-top: 20px;
+    font-size: 3em;
+    color: #3A5295;
+}
+
+.button-detail{
+    width: 40%;
+    padding: 2% 3%;
+    margin: 8% 5% 5% 12%;
+    background-color: #3A5295;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    
+}

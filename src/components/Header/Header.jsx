@@ -9,9 +9,13 @@ import { BsHouses } from "react-icons/bs";
 function Header() {
   return (
     <div className='header-container'>
+      <Link to="/" className='header-link'>
         <div className='header'>
-       <BsHouses className='sizing'/><h1>UniLife</h1>
+       <BsHouses className='sizing'/>
+       <h1>UniLife</h1>
        </div>
+      </Link>
+       
         <div className='nav-container'>
         <CiHeart className='sizing' /><p>Shortlist</p>
         <CiMail className='sizing' /><p>Contact Us</p>
