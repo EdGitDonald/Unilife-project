@@ -13,12 +13,14 @@ function CityDetails() {
   const {cityId, testParam} = useParams()
   // console.log(cityId, testParam)
   const [cityHomes, setCityHomes] = useState([])
+ 
 
   useEffect(() =>{
   axios.get(`https://unilife-server.herokuapp.com/properties/city/${cityId}`)
   .then(res => {
     console.log(res.data.response)
     setCityHomes(res.data.response)
+    // below state for calling additional property detail for each card for home detail page
 })
   .catch(err => console.log(err))
 },[])
@@ -30,7 +32,7 @@ function CityDetails() {
     <div className='homes-container'>
         {
             cityHomes.map(item => {
-                return <CityHomesCard homes={item}/>
+                return <CityHomesCard homes={item} />
                 //insert component for city homes map
             })
         }

@@ -5,7 +5,9 @@ import Footer from './components/Footer/Footer'
 import Homepage from './pages/Homepage/Homepage'
 import SeeAllCitiesPage from './pages/SeeAllCitiesPage/SeeAllCitiesPage'
 import CityDetails from './pages/CityDetails/CityDetails'
+import HomeDetail from './pages/HomeDetail/HomeDetail'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 
 function App() {
  
@@ -17,6 +19,7 @@ function App() {
        <Route path='/' element={<Homepage />} />
        <Route path='/SeeAllCities' element={<SeeAllCitiesPage />}/>
        <Route path='/CityDetails/:cityId/:testParam' element={<CityDetails />} />
+       <Route path='/HomeDetail/:propertyId' element={<HomeDetail/>} />
       </Routes>
      
       <Footer />

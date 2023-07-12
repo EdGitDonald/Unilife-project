@@ -1,0 +1,95 @@
+
+
+.width{
+    width: 50%;
+}
+
+.det-width{
+    width: 33.3%;
+    height: 100px;
+    border: solid red 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.property-img-container{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.property-images-first{
+    width: 90%;
+    border-radius: 24px;
+
+}
+
+.property-images{
+    width: 32%;
+    height: auto;
+    border-radius: 18px;
+    
+    
+}
+
+.bottom-row-img{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 20px 0px;
+}
+
+.property-spec-container{
+    border: 1px green solid;
+    display: flex;
+   justify-content: center; 
+}
+
+.prop-address{
+    border: 1px red solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.property-det-card{
+    border: 1px green solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 24px;
+    width: 90%;
+    margin: 20px 0px 40px 0px;
+}
+
+.property-spec{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.description-container{
+    border: 1px pink solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 50px;
+}
+
+.bedroom-price-container{
+    border: 1px yellow solid;
+}
+
+.key-feat-container{
+    border: 1px purple solid;
+}
+

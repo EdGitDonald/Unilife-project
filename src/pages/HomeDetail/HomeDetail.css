@@ -1,0 +1,11 @@
+.property-images{
+    width: 100px;
+    height: 100px;
+}
+
+.home-det-container{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px red solid;
+    min-height: 150vh;
+}
