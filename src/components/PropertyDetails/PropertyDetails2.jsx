@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './PropertyDetails.css'
 
 function PropertyDetails({property}) {
+
   return (
     
     <div className='home-det-container'>
@@ -12,6 +13,8 @@ function PropertyDetails({property}) {
         <img className='property-images' src={property?.images[2]}/>
         <img className='property-images' src={property?.images[3]}/>
         </div>
+
+       
         </div>
         
         <div className='property-spec-container width'>
@@ -36,12 +39,48 @@ function PropertyDetails({property}) {
         <div className='bedroom-price-container width'>
             <p>Bedroom Prices</p>
             <div>
-            
+
+                {/* {
+                    property.map(() => {
+                        return
+
+
+                    })
+                } */}
+
+
+
+
+
+                {/* {
+                seeAllCities.map(prop => {
+                    return <SingleCityCard city={prop} />
+                })
+            } */}
+
+                {/* <div className='bed-prices'>
+                    <p>Bedroom 1</p>
+                    <p>{property?.bedroom_prices?.bedroom_one} per week</p>
+                </div> 
+                //Loop through bedroom prices and paste into a template*/}
+
+                {/* <p>£{property?.bedroom_prices?.bedroom_one} per week</p>
+                <p>£{property?.bedroom_prices?.bedroom_two} per week</p>
+                <p>£{property?.bedroom_prices?.bedroom_three} per week</p>
+                <p>£{property?.bedroom_prices?.bedroom_four} per week</p> */}
+
             </div>
         </div>
 
         <div className='key-feat-container width'>
-            <p>{property?.key_features}</p>
+            {/* <p>{property?.key_features[0]}</p>
+            <p>{property?.key_features[1]}</p>
+            <p>{property?.key_features[2]}</p>
+            <p>{property?.key_features[3]}</p>
+            <p>{property?.key_features[4]}</p> */}
+
+            {/* <p>{property?.key_features[0]}</p>
+            //Loop through key_features */}
         </div>
 
     </div>

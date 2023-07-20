@@ -1,4 +1,6 @@
 import React, { useState , useEffect} from 'react'
+import { useNavigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import './Homepage.css'
 import Banner from '../../components/Banner/Banner'
 import axios from 'axios'
@@ -8,9 +10,11 @@ import Infobox from '../../components/Infobox/Infobox'
 import Input from '../../components/Input/Input'
 
 
+
 function Homepage() {
   const [citiesData, setCitiesData] = React.useState([]);
   const [completeCities, SetCompleteCities] = React.useState([]);
+  
 
   useEffect(() => {
     axios.get(`https://unilife-server.herokuapp.com/cities?limit=20`)
@@ -22,10 +26,8 @@ function Homepage() {
     .catch(err => console.log(err))
   },[])
  
-
-
-
-
+ const navigate = useNavigate()
+ 
   return (
     <div className='homepage-container'>
         <Banner />
@@ -37,12 +39,13 @@ function Homepage() {
         <div className='city-card-container'>
           { 
             citiesData.map(item => {
-            return <CityCard city={item}/> 
+            return <CityCard cityList={completeCities} city={item}/> 
             //prop needs to be called inside return otherwise 
             //CityCard cannot access api data
             })
            }
-           <button className='city-button'>See All Cities</button>
+            <button className='city-button' onClick={() =>{navigate('/SeeAllCities')}}>See All Cities</button> 
+           
         </div>
 
         <CompareInsert />

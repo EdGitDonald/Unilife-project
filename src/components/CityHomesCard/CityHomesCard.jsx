@@ -5,9 +5,6 @@ import { useNavigate } from 'react-router-dom'
 
 function CityHomesCard({homes}) {
 
-    
-
-   
     //use on a tag to pull property id and navigate to home detail page
     const navigate = useNavigate()
 
@@ -30,7 +27,7 @@ function CityHomesCard({homes}) {
             <p>{homes.property_type}</p>
             <p>{homes.furnished}</p>
         </div>
-        <p >{homes.address.street}{homes.address.postcode}</p>
+        {/* <p>{homes.address.street}{homes.address.postcode}</p> */}
         </div>
        
         <button onClick={() =>{navigate(`/HomeDetail/${homes._id}`)}}>View Home</button>

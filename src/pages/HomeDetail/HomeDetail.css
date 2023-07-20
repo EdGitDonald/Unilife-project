@@ -6,6 +6,155 @@
 .home-det-container{
     display: flex;
     flex-wrap: wrap;
-    border: 1px red solid;
+  
     min-height: 150vh;
+}
+
+/* Below is page details */
+
+
+
+.width{
+    width: 50%;
+}
+
+.property-img-container{
+    width: 50%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.property-images-first{
+    width: 90%;
+    border-radius: 24px;
+
+}
+
+.property-images{
+    width: 32%;
+    height: auto;
+    border-radius: 18px;  
+}
+
+.bottom-row-img{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 20px 0px;
+    overflow: scroll;
+}
+
+.property-spec-container{
+    /* border: 1px green solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding-top: 5%;
+}
+
+.prop-address{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: Epilogue;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    text-size-adjust: auto;
+}
+
+.property-spec{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.property-det-card{
+    border: 1px solid #CED3D8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 24px;
+    width: 90%;
+    height: 70%;
+    margin: 0px 0px 40px 0px;
+}
+
+.det-width{
+    width: 33.3%;
+    height: 100px;
+    /* border: solid red 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.det-content{
+    width: 100%;
+    color: #3A5295;
+    text-align: center;
+    font-family: Epilogue;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.save-view-container{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.save-view-container p{
+    border-radius: 12px;
+    border: 1px solid #CED3D8;
+    background: #FFF;
+    width: 45%;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.description-container{
+    /* border: 1px pink solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 50px;
+}
+
+.des-detail{
+    color: #000;
+    font-family: Epilogue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    padding-top: 3%;
+}
+
+.bedroom-price-container{
+    border: 1px yellow solid;
+}
+
+.key-feat-container{
+    border: 1px purple solid;
 }

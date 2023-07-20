@@ -18,16 +18,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 30%   
+    height: 30%;
+    
+      
 }
 
-.input-container input{
+.input-container select{
     width: 60%;
-    border: 1px solid #CED3D8;
-    border-radius: 12px;
     height: 130%;  
-    padding-left: 5%;
+    padding: 1%;
     color: #CED3D8;
+    font-family: Epilogue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 12px;
+    border: 1px solid #CED3D8;
+    background: #FFF;
+
 }
 
 .input-container button{

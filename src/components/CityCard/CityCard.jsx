@@ -1,9 +1,11 @@
-import React, {useEffect, useContext} from 'react'
+import React, {useState} from 'react'
 import './CityCard.css'
-import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 function CityCard({city}) {
-  
+
+  const navigate = useNavigate()
+
     const imageStyle={
         backgroundImage: `url(${city.image_url})`,
         width: '30%',
@@ -13,14 +15,11 @@ function CityCard({city}) {
         backgroundRepeat: 'no-repeat',
         position: 'relative',
         borderRadius: '16px',
-       
-
-      
       }
 
     return (
     
-    <div style={imageStyle} className='city-text-container'>
+    <div style={imageStyle} className='city-text-container'  onClick={() =>{navigate(`/CityDetails/${city._id}/test`)}}>
             <p>{city.name}</p>
             <p className='small-text'>{city.property_count} properties</p>    
     </div>
