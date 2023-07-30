@@ -8,6 +8,7 @@ import CityCard from '../../components/CityCard/CityCard'
 import CompareInsert from '../../components/CompareInsert/CompareInsert'
 import Infobox from '../../components/Infobox/Infobox'
 import Input from '../../components/Input/Input'
+import ContactUs from '../../components/ContactUs/ContactUs'
 
 
 

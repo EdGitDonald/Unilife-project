@@ -1,6 +1,18 @@
 import React, {useState} from 'react'
 import './CityHomesCard.css'
 import { useNavigate } from 'react-router-dom'
+import { LuBedDouble, LuBath } from "react-icons/lu";
+import { VscLocation} from "react-icons/vsc"
+import { GoHome } from "react-icons/go";
+
+
+
+
+
+
+
+
+
 
 
 function CityHomesCard({homes}) {
@@ -13,13 +25,13 @@ function CityHomesCard({homes}) {
     <div className='homesCard-container'>
         <img className='home-img' src={homes.images[1]}/>
         <div className='price-bed-bath'>
-            <div>
+            <div className='price'>
             <p>£ {homes.rent}</p>
             <p>pppm including bills</p>
             </div>
             <div className='bed-bath'>
-            <p>{homes.bathroom_count}</p>
-            <p>{homes.bedroom_count}</p>
+            <p className='flex'><span><LuBedDouble  className='icon'/></span>{homes.bedroom_count}</p>
+            <p className='space flex'><span><LuBath  className='icon'/></span>{homes.bathroom_count}</p>
             </div>
         </div>
         <div className='home-furnish-location'>
@@ -27,10 +39,15 @@ function CityHomesCard({homes}) {
             <p>{homes.property_type}</p>
             <p>{homes.furnished}</p>
         </div>
-        {/* <p>{homes.address.street}{homes.address.postcode}</p> */}
+        <div className='location'>
+        
+        <p className='flex'><span><VscLocation className='icon'/></span>{homes.address.street}{homes.address.postcode}</p>
         </div>
-       
-        <button onClick={() =>{navigate(`/HomeDetail/${homes._id}`)}}>View Home</button>
+        </div>
+        <div className='home-link'>
+        <GoHome className='icon'/>
+        <p className='view-home' onClick={() =>{navigate(`/HomeDetail/${homes._id}`)}}>View Home</p>
+        </div>
       
     </div>
   )

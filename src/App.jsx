@@ -7,6 +7,7 @@ import SeeAllCitiesPage from './pages/SeeAllCitiesPage/SeeAllCitiesPage'
 import CityDetails from './pages/CityDetails/CityDetails'
 import HomeDetail from './pages/HomeDetail/HomeDetail'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ContactUs from './components/ContactUs/ContactUs'
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
        <Route path='/CityDetails/:cityId/:testParam' element={<CityDetails />} />
        <Route path='/HomeDetail/:propertyId' element={<HomeDetail/>} />
       </Routes>
-     
+      <ContactUs />
       <Footer />
     </BrowserRouter>
   )

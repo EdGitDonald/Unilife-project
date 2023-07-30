@@ -1,0 +1,48 @@
+.contact-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #00A2E1;
+    color: white;
+    max-height: 90vh;
+}
+
+.email-input ,.social-links{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    text-align: left;
+    padding: 40px 80px
+}
+
+.email-input input{
+    border-radius: 12px;
+    border: 1px solid #CED3D8;
+    background: #FFF;
+    width: 80%;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.email-input h3, .social-links h3{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+p ,h3 ,input{
+    padding-bottom: 30px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.flex span{
+    margin-right: 20px;
+}
+
+

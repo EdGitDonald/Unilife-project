@@ -5,6 +5,13 @@
     margin-top: 5%;
 }
 
+.searchCity-container h3{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 
 
 .searchCityCard-container{

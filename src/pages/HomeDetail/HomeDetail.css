@@ -59,23 +59,24 @@
 
 .prop-address{
     /* border: 1px solid red; */
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     color: #000;
     text-align: center;
     font-family: Epilogue;
-    font-size: 42px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 48px;
-    text-size-adjust: auto;
+    padding: 2%;
+    border-bottom: 1px #CED3D8 solid;
 }
 
 .property-spec{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
     text-align: center;
     
 }
@@ -116,7 +117,16 @@
 .save-view-container{
     display: flex;
     width: 90%;
-    justify-content: space-between;
+    justify-content: space-between;    
+}
+
+.save-view-container p{
+    padding-top: 30px;
+}
+
+.save-view-container p:hover{
+    background-color: #3A5295;
+    color: white;
 }
 
 .save-view-container p{
@@ -152,9 +162,118 @@
 }
 
 .bedroom-price-container{
-    border: 1px yellow solid;
+    max-height: 50vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.bedroom-price-container h2{
+    padding-bottom: 10px;
+}
+
+
+.bedroom-price-container p{
+    display: flex ;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 30px 12px 30px;
+    border-bottom: 1px solid #CED3D8;
+}
+
+.bedroom-detail-container{
+    border: 1px solid #CED3D8;
+    border-radius: 16px;
+    width: 90%;
+}
+
+.bedroom-price-container p:last-child{
+    border-bottom: none;
 }
 
 .key-feat-container{
-    border: 1px purple solid;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.key-feat-detail{
+    width: 85%;
+    
+
+}
+
+.modal-heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 40px 0px;
+}
+
+.form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    margin-top:40px;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    justify-content: space-around;
+}
+
+.viewing-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.viewing-container p{
+    padding-top: 30px;
+}
+
+.modal-btn{
+  margin-top: 30px;
+  border: none;
+  border-radius: 12px;
+  background: #3A5295;
+  width: 100%;
+  height: 56px;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: Epilogue;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.border{
+    border-radius: 12px;
+    border: 1px solid #CED3D8;
+    background: #FFF;
+}
+
+.form-input input ,textarea{
+    border-radius: 12px;
+    border: 1px solid #CED3D8;
+    background: #FFF;
+}
+
+.form-input input{
+    width: 90%;
+height: 56px;
+flex-shrink: 0;
+}
+
+
+
+

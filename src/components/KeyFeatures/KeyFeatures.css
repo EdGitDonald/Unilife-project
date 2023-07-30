@@ -1,0 +1,8 @@
+.features{
+    padding: 10px 0px;
+    display: flex;
+}
+
+.features p{
+    padding-left: 10px;
+}
